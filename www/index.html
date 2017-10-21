@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="قاموس الاشارة اليمني">
+	<meta name="author" content="Khalid Dhafir">
+    <title>قاموس الاشارة اليمني</title>
+
+	<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+
+<body style="padding-top: 60px;">
+<!--Navbar Start-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">قاموس الإشارة اليمني</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">القاموس</a></li>
+        <li><a href="updatedb.html">تحديث البيانات</a></li>
+        <li><a href="about.html">عن البرنامج</a></li>
+      </ul>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav> 
+<!-- Navbar Ends-->
+    <div class="container">
+	<div class="row">
+		<div class="col-sm-12 text-center">
+            <form>
+                <input class="form-control" type="search" id="searchInput" onkeyup="searchtable();" placeholder="أكتب كلمة أو جزء منها للبحث...">
+            </form>
+            <table class="table table-striped table-bordered" id="searchTable">
+                <tbody id="searchTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    <!--********************************************************************************-->
+<!-- Button trigger modal 
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>-->
+
+<!-- Modal -->
+<div class="modal fade" id="WordsModal" tabindex="-1" role="dialog" aria-labelledby="WordExplain">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close pull-left" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="WordExplain"></h4>
+      </div>
+      <div class="modal-body">
+		<div id="wordpic"></div>
+        
+      </div>
+      <div class="modal-footer">
+        <!--<a class="btn btn-primary" href="?action=readit&adid=<?php echo $adid; ?>">موافق</a>-->
+		<button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+         <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--********************************************************************************-->
+    <footer class="footer">
+        <center>تطبيقات عربية 2017 - &copy; arappz.net</center>
+      </footer> 
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Application Database in JavaScript -->
+  <script src="js/wordsdb.js"></script>
+  <!-- Application JavaScript -->
+  <script src="js/main.js"></script>
+    </body>
+</html>
